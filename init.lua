@@ -32,6 +32,11 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "nvchad.autocmds"
 
+require('glow').setup({
+  style = "dark",
+  width = 120,
+})
+
 vim.schedule(function()
   require "mappings"
 end)
